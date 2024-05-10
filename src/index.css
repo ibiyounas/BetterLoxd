@@ -3,19 +3,42 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../backdrop_dune.jpg");
+  background-repeat: no-repeat;
+  background-color: #101123;
+  color: white;
+  background-size: 100%;
+  text-shadow: 2px 2px 5px black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.cards {
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.5rem;
+}
+
 .card {
-  max-width: 400px;
+  max-width: 10px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  border: 2px solid var(--dark-turquoise);
+  border: 0px solid;
+}
+
+@media screen and (max-width: 0px) {
+  .card {
+    display: block;
+    max-width: inherit;
+  }
 }
 
 .card {
@@ -24,13 +47,72 @@ code {
 }
 
 .card .image {
-  max-height: 1000px;
+  max-height: 2000px;
   overflow: hidden;
   position: relative;
 }
 
 .card .image img {
-  width: 35%;
-  height: 35%;
+  width: 95%;
+  height: 95%;
   object-fit: cover;
+}
+.card .image .claps {
+  color: gray;
+  text-shadow: 0 0 0 var(--turquoise);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.card .image .trash {
+  color: black;
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.card .image .claps:focus,
+.card .image .claps:hover {
+  color: transparent;
+  text-shadow: 0 0 0 var(--color);
+}
+
+.card .details {
+  margin: 1.5rem;
+}
+
+.card .details h4 {
+  margin: 0.5rem 0;
+}
+
+.card .details p {
+  margin: 0.5rem 0;
+}
+
+.card .extra {
+  margin-top: auto;
+}
+.badge {
+  display: inline-block;
+  padding: 0rem 0rem;
+  border-radius: 0px;
+  margin: 0.25rem;
+}
+.details img{
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+}
+.stars {
+  color: gray;
+  text-shadow: 0 0 0 var(--turquoise);
+  position: absolute;
+  top: 155px;
+  left: 920px;
+
+}
+.infor {
+  position: fixed;
+  left: 250px;
+  max-width: 1000px;
 }

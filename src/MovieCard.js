@@ -17,14 +17,14 @@ function MovieCard({ id, info, director, image, name, onDelete, movie }) {
   const navigate = useNavigate()
 
   function handleNavigate() {
-    navigate(`/projects/${id}`)
+    navigate(`/movies/${id}`)
   }
     return (
     <li className="card" onClick={handleNavigate}>
         <figure className="image">
           <img src={image} alt={name} />
-          <button className="claps" onClick={handleLikeCount}>👏{likes}</button>
-          <button onClick={handleDelete}> Delete</button>
+          <button className="claps" onClick={handleLikeCount}>💖{likes}</button>
+          <button classname="trash" onClick={handleDelete}>🗑️</button>
         </figure>
   
         <section className="details">

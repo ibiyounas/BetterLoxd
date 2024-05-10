@@ -27,7 +27,7 @@ const routes = [
         element: <MovieForm />
       },
       {
-        path: "projects/:id",
+        path: "movies/:id",
         element: <MovieDetails />
       }
     ]

@@ -7,14 +7,17 @@ const Header = () => {
     <header>
       <h1>
         <span className="logo">{""}</span>
-        BetterLoxd
+        BetterLoxd🎬
       </h1>
       <nav>
         <NavLink to="/movies">
-            Movies
+            Movies    
         </NavLink>
         <NavLink to="/movies/new">
-            New Movie
+            New Movie    
+        </NavLink>
+        <NavLink to="/">
+            About
         </NavLink>
       </nav>
 

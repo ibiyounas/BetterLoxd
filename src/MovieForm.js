@@ -82,7 +82,7 @@ function MovieForm () {
                 Description: 
             </label>
             <input id="info" type="text" value ={info} onChange={handleInfo}/>
-            <button type="submit" value="create movie">Add Project</button>
+            <button type="submit" value="create movie">Add Movie</button>
         </form>
         </div>
         
