@@ -8,7 +8,7 @@ function MovieForm () {
     const [image, setImage] = useState("")
     const [info, setInfo] = useState("")
 
-    const {movies, onAddMovie} = useOutletContext
+    const {movies, onAddMovie} = useOutletContext()
 
     function handleName(event) {
         setName(event.target.value)

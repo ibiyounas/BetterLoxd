@@ -31,6 +31,7 @@ useEffect(() => {
                 <p> Directed by {director}</p>
                 <p className="infor">{info}</p>
                 
+                
             </section>
             </figure>
         </div>
