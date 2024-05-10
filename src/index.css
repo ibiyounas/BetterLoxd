@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.card {
+  max-width: 400px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: 2px solid var(--dark-turquoise);
+}
+
+.card {
+  display: block;
+  max-width: inherit;
+}
+
+.card .image {
+  max-height: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .image img {
+  width: 35%;
+  height: 35%;
+  object-fit: cover;
+}
