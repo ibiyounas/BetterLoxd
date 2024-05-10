@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-
-function MovieForm ({onAddMovie,movies}) {
+import { useOutletContext } from "react-router-dom"
+function MovieForm () {
 
     const [name, setName] = useState("")
     const [year, setYear] = useState("")
@@ -8,6 +8,7 @@ function MovieForm ({onAddMovie,movies}) {
     const [image, setImage] = useState("")
     const [info, setInfo] = useState("")
 
+    const {movies, onAddMovie} = useOutletContext
 
     function handleName(event) {
         setName(event.target.value)
